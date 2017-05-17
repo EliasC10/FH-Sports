@@ -1,0 +1,180 @@
+body{
+    background-color: rgb(43,43,43);
+    padding: 0;
+    margin: 0;}
+
+img#Banner{
+    width: 100%;
+    height: auto;}
+
+.überschrift{
+    margin-top: -0.5%;
+    padding: 0.5%;
+    padding-left: 20px;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(130,14,17);}
+
+h1{margin: 0;}
+
+h2{
+    font-family: 'Amaranth', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 0;}
+
+ /* CSS für Sportarten: */
+
+a#entry{
+    font-family: 'Lato', sans-serif;
+    float: right;
+    margin-top: -3.5%;
+    background-color: rgb(43,43,43);
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 1%;
+    transition-duration: 0.4s;}
+
+a#entry:hover{
+    background-color: white;
+    color: black;}
+
+.body{
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    color: white;}
+
+ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 1500px;}
+
+li{
+    background-color: rgb(130,14,17) ;
+    width: 20%;
+    margin: 5%;
+    padding: 1%;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 27%;}
+
+a#button{
+    font-family: 'Lato', sans-serif;
+    Font-size: 20px;
+    float: left;
+    background-color: rgb(43,43,43);
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 1.8%;
+    margin: 1%;
+    transition-duration: 0.4s;}
+
+a#button:hover{
+    background-color: white;
+    color: black;}
+
+   /* CSS für Sportarten ENDE */
+
+
+    /* CSS für new_entry: */
+
+.formular{
+    font-family: 'Lato', sans-serif;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 2%;
+    background-color: rgb(130,14,17);
+    color:white;
+    font-size: 20px;}
+
+h3{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 30px;
+    margin: 0.5%;
+    padding: 0;
+    color: white;}
+
+.formcss{
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 0.5%;
+    width: 350px;
+    font-size: 20px;}
+
+input[name=name]{background-color: darkgrey;}
+
+textarea[name=text]
+{
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 0.5%;
+    width: 500px;
+    height: 300px;
+    font-size: 20px;
+    resize: none;}
+
+input[type=submit]{
+    font-family: 'Lato', sans-serif;
+    Font-size: 20px;
+    background-color: rgb(43,43,43);
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 0.8%;
+    margin: 0.5%;
+    color: white;
+    transition-duration: 0.4s;
+    border-style: none;}
+
+input[type=submit]:hover{
+    background-color: white;
+    color: black;}
+
+ /* CSS für new_entry ENDE */
+
+
+.footer{
+    bottom: 0;
+    margin-top: 2%;
+    padding: 2%;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    text-align: center;
+    color: white;}
+
+.footer > p{
+    padding: 0.5%;
+    margin: 0;
+    letter-spacing: 0.1em;}
+
+
+@media screen and (max-width: 1200px){
+    a#entry{ margin-top: -6%; }
+    ul{ justify-content: flex-start; }
+    li{width: 35%;}}
+
+@media screen and (max-width: 700px){
+    a#entry{ margin-top: -6%; }
+    ul{ justify-content: center; }
+    li{width: 60%; }
+    .überschrift{font-size: 15px;}
+    textarea[name=text]{width: 400px;}}
+
+@media screen and (max-width: 500px){
+    a#entry{ margin-top: -5%; }
+    ul{ justify-content: center; }
+    li{width: 70%; }
+    .überschrift{font-size: 10px;}
+    a#entry{font-size: 10px;}
+    textarea[name=text]{width: 250px;}
+    .formcss{width: 250px;}}
+
+/* Diese Datei ist ein Teil des Multimediaprojektes 1,
+der Fachhochschule Salzburg, Studiengang Multimediatechnology.
+        Idee und Umsetzung von Elias Cia */
+

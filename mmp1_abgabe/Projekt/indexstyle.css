@@ -1,0 +1,125 @@
+body{
+    font-family: 'Amaranth', sans-serif;
+    background-color: rgb(43,43,43);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;}
+
+img#Banner{
+    width: 100%;
+    height: auto;}
+
+.Sports{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 1500px;}
+
+.item{
+    width: 30%;
+    padding-top: 10%;
+    margin: 5%;
+    height: 15%;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;}
+
+
+a{
+    font-family: 'Amaranth', sans-serif;
+    text-decoration: none;
+    font-size: 50px;
+    color: aliceblue;}
+
+a:hover{ text-shadow: 2px 2px 4px #000000;}
+
+
+.footer{
+    bottom: 0;
+    margin-top: 2%;
+    padding: 2%;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    position: relative;}
+
+.footer > p{
+    padding: 0.5%;
+    margin: 0;
+    letter-spacing: 0.1em;}
+
+@media screen and (max-width: 1400px){
+    .Sports{ height: 1100px; }
+    a{ font-size: 30px; }}
+
+@media screen and (max-width: 1000px){
+    .Sports{ height: 800px; }
+    a{ font-size: 30px; }}
+
+@media screen and (max-width: 700px){
+     .Sports{height: 600px; }
+    a{font-size: 20px; }
+    .item {width: 50%}}
+
+@media screen and (max-width: 500px){
+    .Sports{height: 400px;}
+    a{ font-size: 14px; }}
+
+
+
+#beachvolleyball{
+    background: url('pictures/Beachvolleyball.jpg') no-repeat;
+    background-size: 100%;}
+
+
+#beachvolleyball:hover{
+    background: url('pictures/Beachvolleyball_hover.jpg') no-repeat;
+    background-size: 100%;}
+
+#laufen{
+    background: url('pictures/Running.jpg') no-repeat;
+    background-size: 100%;}
+
+#laufen:hover{
+    background: url('pictures/Running_hover.jpg') no-repeat;
+    background-size: 100%;}
+
+#longboard{
+    background: url('pictures/Longboarding.jpg') no-repeat;
+    background-size: 100%;}
+
+#longboard:hover{
+    background: url('pictures/Longboarding_hover.jpg') no-repeat;
+    background-size: 100%;}
+
+#radfahren{
+    background: url('pictures/Radfahren.jpg') no-repeat;
+    background-size: 100%;}
+
+#radfahren:hover{
+    background: url('pictures/Radfahren_hover.jpg') no-repeat;
+    background-size: 100%;}
+
+#wandern{
+    background: url('pictures/Wandern.jpg') no-repeat;
+    background-size: 100%;}
+
+#wandern:hover{
+    background: url('pictures/Wandern_hover.jpg') no-repeat;
+    background-size: 100%;}
+
+#sonstige{
+    background: url('pictures/Sonstige.jpg') no-repeat;
+    background-size: 100%;}
+
+#sonstige:hover{
+    background: url('pictures/Sonstige_hover.jpg') no-repeat;
+    background-size: 100%;}
+
+
+    /* Diese Datei ist ein Teil des Multimediaprojektes 1,
+    der Fachhochschule Salzburg, Studiengang Multimediatechnology.
+            Idee und Umsetzung von Elias Cia */
