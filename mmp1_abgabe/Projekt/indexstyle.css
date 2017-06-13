@@ -6,6 +6,19 @@ body{
     height: 100%;
     min-height: 100%;}
 
+
+.chat{
+    position:fixed;
+    width: 100%;
+    background-color: rgb(130,14,17);
+    margin: 0;
+    padding: 10px;
+    color: white;}
+.chat > a{
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;}
+
 img#Banner{
     width: 100%;
     height: auto;}
@@ -33,6 +46,30 @@ a{
     color: aliceblue;}
 
 a:hover{ text-shadow: 2px 2px 4px #000000;}
+
+#newsport{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+a#entry{
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
+    width: 25%;
+    height: 30px;
+    background-color: rgb(130,14,17);
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    transition-duration: 0.4s;}
+
+a#entry:hover{
+    background-color: white;
+    color: black;}
+
 
 
 .footer{
@@ -68,54 +105,60 @@ a:hover{ text-shadow: 2px 2px 4px #000000;}
     .Sports{height: 400px;}
     a{ font-size: 14px; }}
 
+.item{
+    background: url('pictures/Sonstige.jpg') no-repeat;
+    background-size: 100%;}
 
+.item:hover{
+    background: url('pictures/Sonstige_hover.jpg') no-repeat;
+    background-size: 100%;}
 
-#beachvolleyball{
+#Beachvolleyball{
     background: url('pictures/Beachvolleyball.jpg') no-repeat;
     background-size: 100%;}
 
 
-#beachvolleyball:hover{
+#Beachvolleyball:hover{
     background: url('pictures/Beachvolleyball_hover.jpg') no-repeat;
     background-size: 100%;}
 
-#laufen{
+#Laufen{
     background: url('pictures/Running.jpg') no-repeat;
     background-size: 100%;}
 
-#laufen:hover{
+#Laufen:hover{
     background: url('pictures/Running_hover.jpg') no-repeat;
     background-size: 100%;}
 
-#longboard{
+#Longboarding{
     background: url('pictures/Longboarding.jpg') no-repeat;
     background-size: 100%;}
 
-#longboard:hover{
+#Longboarding:hover{
     background: url('pictures/Longboarding_hover.jpg') no-repeat;
     background-size: 100%;}
 
-#radfahren{
+#Radfahren{
     background: url('pictures/Radfahren.jpg') no-repeat;
     background-size: 100%;}
 
-#radfahren:hover{
+#Radfahren:hover{
     background: url('pictures/Radfahren_hover.jpg') no-repeat;
     background-size: 100%;}
 
-#wandern{
+#Wandern{
     background: url('pictures/Wandern.jpg') no-repeat;
     background-size: 100%;}
 
-#wandern:hover{
+#Wandern:hover{
     background: url('pictures/Wandern_hover.jpg') no-repeat;
     background-size: 100%;}
 
-#sonstige{
+#Sonstige{
     background: url('pictures/Sonstige.jpg') no-repeat;
     background-size: 100%;}
 
-#sonstige:hover{
+#Sonstige:hover{
     background: url('pictures/Sonstige_hover.jpg') no-repeat;
     background-size: 100%;}
 

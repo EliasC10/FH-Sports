@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+  <head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Lato" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://js.pusher.com/3.0/pusher.min.js"></script>
+
+
+    <link rel="stylesheet/less" type="text/css" href="lib/twitter-bootstrap/lib/bootstrap.less">
+    <script src="lib/less/less-1.1.5.min.js"></script>
+
+    <link href="styles.css" rel="stylesheet" />
+    <link href="pusher-chat-widget.css" rel="stylesheet" />
+
+      <title>Fhsports</title>
+
+      <div class= "Banner">
+          <a href="../../index.php"><img id="Banner" src="../../pictures/Head.jpg" alt="Header"></a>
+      </div>
+
+
+    <script src="js/PusherChatWidget.js"></script>
+    <script>
+      $(function() {
+        var pusher = new Pusher("ce6983c067d34cc955ca", { cluster: "eu"});
+        var chatWidget = new PusherChatWidget(pusher, {
+          appendTo: "#pusher_chat_widget"
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+    <div class="container">
+      <section class="realtime-chat">
+        <div class="row">
+          <div class="span5" id="pusher_chat_widget">
+          </div>
+        </div>
+
+      </section>
+
+
+    </div> <!-- /container -->
+    <div class="footer">
+      <p>Fhsports ist ein Multimediaprojekt der FH Salzburg</p>
+      <p>Idee und Umsetzung von Elias Cia</p>
+    </div>
+  </body>
+</html>
+
+<!-- Diese Datei ist ein Teil des Multimediaprojektes 1,
+der Fachhochschule Salzburg, Studiengang Multimediatechnology.
+Idee und Umsetzung von Elias Cia -->

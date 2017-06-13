@@ -1,0 +1,21 @@
+TODO 1(Lernfortschritt):
+
+
+1. Bei Pusher.com registriert. Mit Hilfe des Tutorials(https://github.com/pusher-community/pusher-realtime-chat-widget) & dem dazugehörigen code,
+   einen Realtime-LiveChat in meiner Webapplikation implementiert.
+
+2. Im header, einen Link für den LiveChat hinzugefügt.
+
+
+TODO 2(Programmieren):
+
+1. Die einzelnen Sportarten(.php) wurde auf eine dynamische sport.php umgeschrieben, die auf die Datenbank zugreift und die Sportart auswählt bzw. Einträge auflistet.
+
+2. Durch Schritt 1. war es nötig die index.php anzupassen. Die "fixen" Sportarten wurden durch eine foreach-Schleife ausgetauscht die alle Sportarten aus der Datenbank auflistet.
+
+3. new_sport.php erlaubt es nun über eine Verlinkung auf der Startseite eine neue Sportart anzulegen.(damit verbundene Änderungen: Anpassung von new_entry, index.php, functions.php)
+
+
+TODO 3(Security):
+
+4. delete_entry.php durch ein prepare-Statment auf der neuen sport.php ersetzt.

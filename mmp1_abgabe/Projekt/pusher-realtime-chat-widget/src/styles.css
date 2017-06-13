@@ -1,0 +1,43 @@
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(43,43,43);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;}
+
+img#Banner{
+  width: 100%;
+  height: auto;}
+
+.container {
+  width: 100%
+}
+
+.hero-unit h1 {
+  font-size: 45px;
+}
+
+.hero-unit {
+  padding-bottom: 20px;
+}
+
+.hero-unit p:last-child {
+  margin: 0;
+  line-height: 11px;
+}
+
+
+.hide {
+  display: none;
+}
+
+#pusher_chat_widget .pusher-chat-widget {
+  /* override for purposes of demo */
+  position: relative !important;
+  bottom: auto !important;
+  right: auto !important;
+
+  margin-left: 30px;
+}
+

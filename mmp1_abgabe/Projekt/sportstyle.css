@@ -23,6 +23,21 @@ h2{
     margin-top: 5%;
     margin-bottom: 0;}
 
+.chat{
+    position:fixed;
+    width: 100%;
+    background-color: rgb(130,14,17);
+    margin: 0;
+    padding: 10px;
+    color: white;}
+
+.chat > a{
+    padding: 10px;
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Amaranth', sans-serif;}
+
  /* CSS für Sportarten: */
 
 a#entry{

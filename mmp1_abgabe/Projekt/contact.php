@@ -24,14 +24,23 @@ if (isset($_POST['submit'])) {
     $to = $person->mail;
     $name = $_POST['name'];
     $from = $_POST['mail'];
-    $message = $_POST['text'];
-    $header = 'From: ' .$from . "\r\n" .
-        'Reply-To: '.$from .  "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
-    mail($to, $name, $message, $header);
+    $message = strip_tags($_POST['text']);
+    $header = 'From: ' . $from;
 
-    echo '<p>Deine Nachricht wurde erfolgreich übermittelt<p></div>';
+
+    if (preg_match("/[\r\n]/", $name) ||
+        preg_match("/[\r\n]/", $from) ||
+        preg_match("/[\r\n]/", $to)   ||
+        preg_match("/[\r\n]/", $header)){
+        echo "<script>alert('Whyyyyy???')</script>";}
+
+    else {
+        mail($to, $name, $message, $header);
+        echo '<p>Deine Nachricht wurde erfolgreich übermittelt<p>';}
+
+
     } ?>
+</div>
 <?php include "footer.php";?>
 </body>
 

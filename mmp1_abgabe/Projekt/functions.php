@@ -15,28 +15,7 @@
         die("Problem connecting to database $DB_NAME as $DB_USER: " . $e->getMessage() );
     }
 
-    function get_sport($sport){
-        switch($sport){
-            case 'Beachvolleyball':
-                return 1;
-                break;
-            case 'Laufen':
-                return 2;
-                break;
-            case 'Longboarding':
-                return 3;
-                break;
-            case 'Radfahren':
-                return 4;
-                break;
-            case 'Wandern':
-                return 5;
-                break;
-            case 'Sonstige':
-                return 6;
-                break;
-        }
-    }
+
 ?>
 
 <!-- Diese Datei ist ein Teil des Multimediaprojektes 1,
