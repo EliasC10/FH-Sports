@@ -19,13 +19,21 @@
     include "functions.php";
     include "ldap.php";
 
-    try {
-        $username = $_SERVER['AUTHENTICATE_UID'];
-        list($name, $email)= name_and_email_from_ldap( $username );
-    } catch (Exception $e) {
-        echo 'Exception abgefangen: ',  $e->getMessage(), "\n";
-        exit;
+    if ($_SERVER['HTTP_HOST']=='users.multimediatechnology.at'){
+
+        try {
+            $username = $_SERVER['AUTHENTICATE_UID'];
+            list($name, $email)= name_and_email_from_ldap( $username );
+        } catch (Exception $e) {
+            echo 'Exception abgefangen: ',  $e->getMessage(), "\n";
+            exit;
+        }
+
+    } else{
+            $name = 'Test';
+            $email ='test@gmx.at';
     }
+
 
     ?>
 </head>

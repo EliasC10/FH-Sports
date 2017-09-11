@@ -48,8 +48,11 @@ $sports = $sth->fetchAll();?>
 <?php
 
 if(isset($_POST['submit'])) {
-    htmlspecialchars($name_input = $_POST['name']);
-    $sth = $dbh->query("SELECT COUNT(*) FROM students  WHERE '$name_input' = name");
+    $name_input = $_POST['name'];
+    $sth = $dbh->prepare("SELECT COUNT(*) FROM students  WHERE ? = name");
+    $sth->execute(
+            array($name_input)
+    );
 
     //überpfrüt ob die Person schon existiert
     if($column = $sth->fetchColumn() == 0) {
@@ -65,7 +68,8 @@ if(isset($_POST['submit'])) {
     };
 
     //DB-Query damit wir die id der gerade angelegten Person od. bereits angelegten Person verwenden können
-    $stm = $dbh->query("SELECT * FROM students  WHERE '$name_input' = name");
+    $stm = $dbh->prepare("SELECT * FROM students  WHERE name = ?");
+    $stm->execute(array($name_input));
     $person = $stm->fetch();
 
     //neuer Eintrag in entries

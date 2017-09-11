@@ -4,12 +4,15 @@
 <?php
 
 $sport = $_GET['sport_id'];
-$sth = $dbh->query(
+
+$sth = $dbh->prepare(
     "SELECT students.name, students.mail, entries.training_level, entries.text, students.student_id FROM entries, students 
-     WHERE entries.sport_id = '$sport' AND entries.student_id = students.student_id");
+     WHERE entries.sport_id = ? AND entries.student_id = students.student_id");
+$sth->execute(array($sport));
 $personen = $sth->fetchAll();
 
-$foo = $dbh->query("SELECT * FROM sports WHERE sport_id = '$sport'");
+$foo = $dbh->prepare("SELECT * FROM sports WHERE sport_id = ?");
+$foo->execute(array($sport));
 $sportart = $foo->fetch();
 ?>
 
@@ -33,9 +36,13 @@ $sportart = $foo->fetch();
                               <input type='submit' value='Eintrag löschen' name='submit'>                                           
                               </form>";
 
-                        if(isset($_POST['submit']))
-                            $sth = $dbh->prepare("DELETE FROM entries WHERE student_id = $person->student_id AND sport_id = $sportart->sport_id");
-                            $sth->execute();
+                        if(isset($_POST['submit'])){
+                            $sth = $dbh->prepare("DELETE FROM entries WHERE student_id = ? AND sport_id = ?");
+                            $sth->execute(
+                                    array( $person->student_id,
+                                           $sportart->sport_id)
+                            );
+                            header("Refresh:0");}
 
                     }
                     else echo "<a id='button' href='contact.php?student_id=".($person->student_id)."'>kontaktieren</a>";

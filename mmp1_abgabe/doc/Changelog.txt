@@ -1,3 +1,21 @@
+Nachprüfung:
+
+TODO 2(Programmieren):
+
+Dem User wird nun die Möglichkeit geboten, ein eigenes Bild zu seiner Sportart hinzuzufügen. 
+PS: Wollte dies Anfangs nicht, da es meinem Design (Sonnenuntergang, einladende und gemütliche Farben) wiederspricht und für Unfug genutzt werden kann. 
+
+TODO3(Security):
+Meine Web-Application nutzt jetzt ausschließlich prepard Statements, bei denen der Input von "außen" kommt!
+
+Weiteres:
+Problem beim Löschen eines Eintrages wurde gefixt.
+
+
+
+
+Codereview 1:
+
 TODO 1(Lernfortschritt):
 
 
@@ -19,3 +37,5 @@ TODO 2(Programmieren):
 TODO 3(Security):
 
 4. delete_entry.php durch ein prepare-Statment auf der neuen sport.php ersetzt.
+
+

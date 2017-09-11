@@ -5,7 +5,10 @@
 <?php
 
 $id = $_GET['student_id'];
-$stm = $dbh->query("SELECT * FROM students WHERE student_id = $id");
+$stm = $dbh->prepare("SELECT * FROM students WHERE student_id = ?");
+$stm->execute(
+        array($id)
+);
 $person = $stm->fetch();
 $anrede = $person->name;
 

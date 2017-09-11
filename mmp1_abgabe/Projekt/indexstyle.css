@@ -30,6 +30,7 @@ img#Banner{
     height: 1500px;}
 
 .item{
+    background-color: black;
     width: 30%;
     padding-top: 10%;
     margin: 5%;
@@ -38,6 +39,10 @@ img#Banner{
     text-align: center;
     overflow: hidden;}
 
+.item:hover{
+    transform:scale(1.1);
+    transition: .5s;
+}
 
 a{
     font-family: 'Amaranth', sans-serif;
@@ -88,6 +93,8 @@ a#entry:hover{
     margin: 0;
     letter-spacing: 0.1em;}
 
+
+
 @media screen and (max-width: 1400px){
     .Sports{ height: 1100px; }
     a{ font-size: 30px; }}
@@ -105,62 +112,6 @@ a#entry:hover{
     .Sports{height: 400px;}
     a{ font-size: 14px; }}
 
-.item{
-    background: url('pictures/Sonstige.jpg') no-repeat;
-    background-size: 100%;}
-
-.item:hover{
-    background: url('pictures/Sonstige_hover.jpg') no-repeat;
-    background-size: 100%;}
-
-#Beachvolleyball{
-    background: url('pictures/Beachvolleyball.jpg') no-repeat;
-    background-size: 100%;}
-
-
-#Beachvolleyball:hover{
-    background: url('pictures/Beachvolleyball_hover.jpg') no-repeat;
-    background-size: 100%;}
-
-#Laufen{
-    background: url('pictures/Running.jpg') no-repeat;
-    background-size: 100%;}
-
-#Laufen:hover{
-    background: url('pictures/Running_hover.jpg') no-repeat;
-    background-size: 100%;}
-
-#Longboarding{
-    background: url('pictures/Longboarding.jpg') no-repeat;
-    background-size: 100%;}
-
-#Longboarding:hover{
-    background: url('pictures/Longboarding_hover.jpg') no-repeat;
-    background-size: 100%;}
-
-#Radfahren{
-    background: url('pictures/Radfahren.jpg') no-repeat;
-    background-size: 100%;}
-
-#Radfahren:hover{
-    background: url('pictures/Radfahren_hover.jpg') no-repeat;
-    background-size: 100%;}
-
-#Wandern{
-    background: url('pictures/Wandern.jpg') no-repeat;
-    background-size: 100%;}
-
-#Wandern:hover{
-    background: url('pictures/Wandern_hover.jpg') no-repeat;
-    background-size: 100%;}
-
-#Sonstige{
-    background: url('pictures/Sonstige.jpg') no-repeat;
-    background-size: 100%;}
-
-#Sonstige:hover{
-    background: url('pictures/Sonstige_hover.jpg') no-repeat;
-    background-size: 100%;}
 
 
     /* Diese Datei ist ein Teil des Multimediaprojektes 1,

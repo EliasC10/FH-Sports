@@ -31,7 +31,10 @@
 <body>
     <div class="Sports">
         <?php foreach($sports as $sport) : ?>
-        <div class="item" id="<?php echo $sport->sport ?>">
+        <div class="item" id="<?php echo $sport->sport ?>"
+             style=
+                    "background: url('pictures/<?php echo $sport->picture?>') no-repeat;
+                     background-size:100%">
              <a href="sport.php?sport_id=<?php echo $sport->sport_id?>"><?php echo $sport->sport?></a>
         </div>
 

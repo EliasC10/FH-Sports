@@ -167,6 +167,10 @@ input[type=submit]:hover{
     margin: 0;
     letter-spacing: 0.1em;}
 
+#newsport > p{
+    font-size: 15px;
+}
+
 
 @media screen and (max-width: 1200px){
     a#entry{ margin-top: -6%; }
