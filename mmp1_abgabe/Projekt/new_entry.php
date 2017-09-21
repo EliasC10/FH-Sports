@@ -18,7 +18,7 @@ $sports = $sth->fetchAll();?>
     <form method='post' action='new_entry.php'>
         <h3>Deine Daten:</h3>
 
-        <input class='formcss' type='text' pattern='[A-Z][a-z*' title='Es sind nur Buchstaben erlaubt'
+        <input class='formcss' type='text' pattern='[A-Za-z]{3,}' title='Bitte verwenden Sie mindestens 3 Buchstaben!'
                value='<?php echo $name?>' placeholder='Vor- und Nachname' name='name' readonly><br>
 
         <input class='formcss' type='email' value='<?php echo $email?>' placeholder='Email' name='mail'><br><br>
@@ -82,7 +82,12 @@ if(isset($_POST['submit'])) {
             $_POST['text']
         )
     );
-    echo '<p>Eingabe war erfolgreich</p></div>';
+    echo"Eingabe war erfolgreich! 
+        <script> if (confirm('Eingabe erfolgreich!') == true) {window.location.href = \"index.php\"}</script>";
+
+
+
+
 }?>
 </div>
 <?php include "footer.php";?>

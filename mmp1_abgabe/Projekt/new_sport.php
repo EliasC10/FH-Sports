@@ -9,7 +9,7 @@
     <div class='formular'>
     <form method='post' action='new_sport.php' enctype="multipart/form-data" id="newsport">
         <h3>Sportart:</h3>
-        <input class='formcss' type='text' pattern='[A-Z][a-z*' title='Es sind nur Buchstaben erlaubt'
+        <input class='formcss' type='text' pattern='[A-Za-z]{3,}' title='Bitte verwenden Sie mindestens 3 Buchstaben!'
                placeholder='Fußball, Tennis, ...' name='sport'><br>
         <h3>Bild:</h3>
         <input type="file" name="fileToUpload" id="fileToUpload">
@@ -72,7 +72,8 @@ if(isset($_POST['submit'])) {
                         )
                 );
 
-                echo '<p>Eingabe war erfolgreich</p></div>';
+            echo"Die Sportart wurde angelegt! 
+            <script> if (confirm('Die Sportart wurde erfolgreich angelegt!') == true) {window.location.href = \"index.php\"}</script>;</div>";
 
             }
 

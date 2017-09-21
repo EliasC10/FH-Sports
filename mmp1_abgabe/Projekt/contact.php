@@ -16,7 +16,7 @@ echo "
     <div class='formular'>
     <form method='post'>
     <h3>Deine Daten: </h3>
-    <input type='text' class='formcss' pattern='[A-Z][a-z*' title='Es sind nur Buchstaben erlaubt' value='$name' placeholder='Vor- und Nachname' name='name'><br>
+    <input type='text' class='formcss'  value='$name' placeholder='Vor- und Nachname' name='name'><br>
     <input type='email' class='formcss' value='$email' placeholder='Email' name='mail'><br><br>
     <h3>Deine Nachricht an $anrede</h3>    
     <textarea name='text'></textarea><br>
@@ -39,10 +39,12 @@ if (isset($_POST['submit'])) {
 
     else {
         mail($to, $name, $message, $header);
-        echo '<p>Deine Nachricht wurde erfolgreich übermittelt<p>';}
+        echo"Eingabe war erfolgreich!
+        <script> if (confirm('Die Nachricht wurde erfolgreich versendet!') == true) {window.location.href = \"index.php\"}</script>";
 
 
-    } ?>
+    }
+}?>
 </div>
 <?php include "footer.php";?>
 </body>

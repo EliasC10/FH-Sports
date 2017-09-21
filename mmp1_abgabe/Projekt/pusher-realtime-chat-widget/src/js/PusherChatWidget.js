@@ -243,7 +243,7 @@ PusherChatWidget.timeToDescription = function(time) {
   var desc = "dunno";
   var now = new Date();
   var howLongAgo = (now - time);
-  var seconds = Math.round(howLongAgo/1000 - 274);
+  var seconds = Math.round(howLongAgo/1000);
   var minutes = Math.round(seconds/60);
   var hours = Math.round(minutes/60);
   if(seconds === 0) {
